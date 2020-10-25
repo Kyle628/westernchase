@@ -1,4 +1,6 @@
 import os
+import werkzeug
+werkzeug.cached_property = werkzeug.utils.cached_property
 from flask import Flask, current_app, send_file
 
 from .api import api_bp

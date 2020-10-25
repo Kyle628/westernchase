@@ -22,7 +22,7 @@ class ResourceOne(Resource):
 
     def get(self, resource_id):
         timestamp = datetime.utcnow().isoformat()
-        return {'timestamp': timestamp}
+        return {'timestamp': timestamp, 'hello': 'world'}
 
     def post(self, resource_id):
         json_payload = request.json
